@@ -77,7 +77,10 @@ const TaskCard = ({ activity, levels, duration, level }) => {
     try {
       setIsLoading(true);
       setError("");
-      const url = `http://127.0.0.1:3001/api/v1/progress`;
+      // const url = `http://127.0.0.1:3001/api/v1/progress`;
+      const url = `https://productivityapp.onrender.com/api/v1/progress`;
+
+   
 
       const res = await fetch(url, requestOptions);
       console.log(res);

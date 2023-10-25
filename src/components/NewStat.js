@@ -52,7 +52,8 @@ const NewStat = () => {
     try {
       setIsLoading(true);
       setError("");
-      const url = `http://127.0.0.1:3001/api/v1/stats`;
+      // const url = `http://127.0.0.1:3001/api/v1/stats`;
+      const url = `https://productivityapp.onrender.com/api/v1/stats`;
 
       const res = await fetch(url, requestOptions);
       console.log(res);

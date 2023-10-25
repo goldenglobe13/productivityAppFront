@@ -30,9 +30,12 @@ const Stats = () => {
     try {
       setIsLoading(true);
       setError("");
+      // const url = user
+      //   ? `http://127.0.0.1:3001/api/v1/stats?user=${user}&endDate[gt]=${+today}`
+      //   : `http://127.0.0.1:3001/api/v1/stats`;
       const url = user
-        ? `http://127.0.0.1:3001/api/v1/stats?user=${user}&endDate[gt]=${+today}`
-        : `http://127.0.0.1:3001/api/v1/stats`;
+        ? `https://productivityapp.onrender.com/api/v1/stats?user=${user}&endDate[gt]=${+today}`
+        : `https://productivityapp.onrender.com/api/v1/stats`;
 
       const res = await fetch(url, { signal: controller.signal });
 
