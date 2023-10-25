@@ -63,8 +63,7 @@ const ProgressProvider = ({ children }) => {
       setIsLoading(true);
       setError("");
       // const url = `http://127.0.0.1:3001/api/v1/progress?year=${year}&month=${month}&day=${day}`;
-      const url = `https://productivityapp.onrender.com
-      /api/v1/progress?year=${year}&month=${month}&day=${day}`;
+      const url = `https://productivityapp.onrender.com/api/v1/progress?year=${year}&month=${month}&day=${day}`;
 
       const res = await fetch(url, { signal: controller.signal });
 
