@@ -39,7 +39,7 @@ const ProgressProvider = ({ children }) => {
       const url = `https://productivityapp.onrender.com/api/v1/daily`;
 
       const res = await fetch(url, { signal: controller.signal });
-
+      console.log(res);
       if (!res.ok) throw new Error("Something went wrong with fetching tasks");
 
       const result = await res.json();
@@ -66,6 +66,7 @@ const ProgressProvider = ({ children }) => {
       const url = `https://productivityapp.onrender.com/api/v1/progress?year=${year}&month=${month}&day=${day}`;
 
       const res = await fetch(url, { signal: controller.signal });
+      console.log(res);
 
       if (!res.ok)
         throw new Error("Something went wrong with fetching progress");
