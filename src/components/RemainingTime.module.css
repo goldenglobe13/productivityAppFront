@@ -1,0 +1,39 @@
+:root {
+  --hours-deg: 0deg;
+  --minutes-deg: 0deg;
+  --seconds-deg: 0deg;
+}
+
+.timeContainer {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 40%;
+  /* background-color: rgba(137, 43, 226, 0.46); */
+}
+
+.time {
+  padding: 0 3px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(158, 158, 158, 0.296);
+  color: rgba(0, 0, 0, 0.608);
+  border-radius: 0.5rem;
+  font-size: 3.2rem;
+  font-family: "Chakra Petch", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0.5%; */
+}
+
+.oneDa {
+  width: 5%;
+  height: 112.5%;
+}
+.twoDa {
+  width: 25%;
+}

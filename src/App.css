@@ -1,0 +1,13 @@
+.fetchButtonContainer {
+  width: 5rem;
+  height: 2rem;
+  margin: 2rem auto;
+}
+
+.fetchButton {
+  background-color: violet;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
